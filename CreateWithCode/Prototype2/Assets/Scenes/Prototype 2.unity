@@ -162,19 +162,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 40
---- !u!65 &156135373
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 156135367}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &156135376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,6 +187,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animalPrefabs: []
+  animalIndex: 0
+--- !u!65 &156135380
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156135367}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,7 +358,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &377265760
 MonoBehaviour:
@@ -384,6 +385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animalPrefabs: []
+  animalIndex: 0
 --- !u!1001 &380117003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -401,11 +403,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 490152, guid: 2b6e184cdeba888429a079d519a7c8d5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.52
+      value: 2.96
       objectReference: {fileID: 0}
     - target: {fileID: 490152, guid: 2b6e184cdeba888429a079d519a7c8d5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.28
+      value: -0.09
       objectReference: {fileID: 0}
     - target: {fileID: 490152, guid: 2b6e184cdeba888429a079d519a7c8d5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -720,7 +722,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &656291472
 MonoBehaviour:
@@ -747,6 +749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animalPrefabs: []
+  animalIndex: 0
 --- !u!1001 &744840710
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1127,9 +1130,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animalPrefabs:
-  - {fileID: 156135367}
-  - {fileID: 656291463}
-  - {fileID: 377265751}
+  - {fileID: 2562786071135153146, guid: 3d12869ba3184b94cbee03c198cf6983, type: 3}
+  - {fileID: 5323751776815911767, guid: 668ca73f917b42c42b2d06096cf4492e, type: 3}
+  - {fileID: 8998039311809822479, guid: fc5abb039e9c2234f95641b7d4e01cfa, type: 3}
+  animalIndex: 0
 --- !u!4 &1926264923
 Transform:
   m_ObjectHideFlags: 0
