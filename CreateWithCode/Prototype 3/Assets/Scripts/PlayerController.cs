@@ -32,19 +32,18 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround && !gameOver)
         {
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            isOnGround = true;
+            isOnGround = false;
             playerAnim.SetTrigger("Jump_trig");
             dirtParticle.Stop();
             playerAudio.PlayOneShot(jumpSound, 1.0f);
         }
     }
 
-    private void OnCollisonEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.CompareTag("Ground"))
         {
             isOnGround = true;
-            Debug.Log("Still Playing");
             dirtParticle.Play();
         } 
         else if(collision.gameObject.CompareTag("Obstacle"))
